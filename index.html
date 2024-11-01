@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kindhumans Closure Announcement</title>
+    <style type="text/css">
+      @font-face {
+        font-family: "AvantGarde-Medium";
+        src: url(./fonts/AvantGarde-Medium.eot);
+        src: url(./fonts/AvantGarde-Medium.eot?#iefix)
+            format("embedded-opentype"),
+          url(./fonts/AvantGarde-Medium.svg#AvantGarde-Medium)
+            format("svg"),
+          url(./fonts/AvantGarde-Medium.ttf)
+            format("truetype"),
+          url(./fonts/AvantGarde-Medium.woff)
+            format("woff"),
+          url(./fonts/AvantGarde-Medium.woff2)
+            format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "BentonSans-Bold";
+        src: url(./fonts/BentonSans-Bold.eot);
+        src: url(./fonts/BentonSans-Bold.eot?#iefix)
+            format("embedded-opentype"),
+          url(./fonts/BentonSans-Bold.svg#BentonSans-Bold)
+            format("svg"),
+          url(./fonts/BentonSans-Bold.ttf)
+            format("truetype"),
+          url(./fonts/BentonSans-Bold.woff)
+            format("woff"),
+          url(./fonts/BentonSans-Bold.woff2)
+            format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "BentonSans-Medium";
+        src: url(./fonts/BentonSans-Medium.eot);
+        src: url(./fonts/BentonSans-Medium.eot?#iefix)
+            format("embedded-opentype"),
+          url(./fonts/BentonSans-Medium.svg#BentonSans-Medium)
+            format("svg"),
+          url(./fonts/BentonSans-Medium.ttf)
+            format("truetype"),
+          url(./fonts/BentonSans-Medium.woff)
+            format("woff"),
+          url(./fonts/BentonSans-Medium.woff2)
+            format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "BentonSans-Regular";
+        src: url(./fonts/BentonSans-Regular.eot);
+        src: url(./fonts/BentonSans-Regular.eot?#iefix)
+            format("embedded-opentype"),
+          url(./fonts/BentonSans-Regular.svg#BentonSans-Regular)
+            format("svg"),
+          url(./fonts/BentonSans-Regular.ttf)
+            format("truetype"),
+          url(./fonts/BentonSans-Regular.woff)
+            format("woff"),
+          url(./fonts/BentonSans-Regular.woff2)
+            format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 1.25rem;
+        line-height: 1.25;
+      }
+
+      body {
+        font-family: "BentonSans-Regular", sans-serif;
+        margin: 0 auto;
+        padding: 0;
+        color: #333;
+      }
+
+      a {
+        color: #117e9c;
+        text-decoration: none;
+        word-wrap: break-word;
+      }
+
+      a:hover,
+      a:focus,
+      a:active {
+        color: #55c8e8;
+      }
+
+      b {
+        font-family: "BentonSans-Bold", sans-serif;
+      }
+
+      header,
+      footer {
+        width: 100%;
+      }
+
+      header {
+        background-color: #1b2935;
+        padding: 10px 20px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo {
+        height: auto;
+        max-height: 100%;
+      }
+
+      main {
+        display: block;
+        width: 100%;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .video {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-height: 480px;
+        background-color: #172028;
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='24' viewBox='0 0 12 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2355c8e8' fill-opacity='0.23'%3E%3Cpath d='M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        overflow: hidden;
+      }
+
+      .video .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        height: auto;
+        color: #1b2935;
+        object-fit: cover;
+      }
+
+      .announcement .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px 20px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        line-height: 1;
+      }
+
+      @media (max-width: 720px) {
+        h1 span {
+          display: block;
+        }
+      }
+
+      h2 {
+        font-size: 2rem;
+        line-height: 1;
+      }
+
+      @media (min-width: 1200px) {
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        h2 {
+          font-size: 2.5rem;
+        }
+      }
+
+      .announcement {
+        font-size: 1rem;
+        line-height: 1.1;
+      }
+
+      @media (min-width: 720px) {
+        .announcement {
+          font-size: 1.25rem;
+          line-height: 1.25;
+        }
+      }
+
+      .announcement ul {
+        margin-left: 8%;
+        padding: 0;
+      }
+
+      .announcement li {
+        margin-bottom: 10px;
+      }
+
+      .announcement hr {
+        border: none;
+        height: 1px;
+        background-color: #dedede;
+        margin: 20px 0;
+      }
+
+      footer {
+        background-color: #12293b;
+        color: #fff;
+      }
+
+      footer .container {
+        max-width: 800px;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .footer-logo {
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .footer-info p {
+        margin: 10px 0;
+        line-height: 1.6;
+      }
+
+      .footer-info a {
+        color: #55c8e8;
+        text-decoration: none;
+      }
+
+      .footer-info a:hover {
+        text-decoration: underline;
+      }
+
+      hr {
+        border: none;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 20px 0;
+      }
+
+      .copy-right {
+        font-size: 14px;
+      }
+
+      .st0 {
+        fill: currentColor;
+      }
+
+      .st1 {
+        clip-path: url(#SVGID_2_);
+        fill: currentColor;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./images/logo-tm-white.svg"
+        alt="Kindhumans"
+        class="logo"
+      />
+    </header>
+    <main>
+      <section class="video">
+        <div class="container">
+          <video playsinline="" autoplay="" muted="" loop="">
+            <source
+              src="./media/website-hero-loop-b-optimized-1080-30fps.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+      <section class="announcement">
+        <div class="container">
+          <h1>Hello <span>Kind Humans!</span></h1>
+          <p>
+            It is with mixed emotions that we announce that Kindhumans is
+            closing its doors, after more than 7 years. It’s been a
+            life-changing journey, and we couldn’t have done it without all of
+            you amazing humans. Given unforeseen personal and professional
+            challenges, it is time for us to spread kindness in other ways. We
+            still believe in the mission, and are beyond grateful to all of our
+            customers, employees, supporters, nonprofit partners, and everyone
+            that has supported us along the way! <b>KIND THANKS TO YOU ALL!</b>
+          </p>
+          <p>
+            The impact that we have made with you, our kind community, fills our
+            hearts with pride and joy.
+          </p>
+          <p>Together we:</p>
+          <ul>
+            <li>
+              Provided 200,000 gallons of safe drinking water for families in
+              Flint, Michigan
+            </li>
+            <li>Shared 35,000 hours of mentorship for at-risk youth</li>
+            <li>Planted over 7,000 mangrove trees to combat climate change</li>
+            <li>
+              Rallied behind meaningful events, like the Paddle for Unity, where
+              we gained the in-person support of thousands during the height of
+              the pandemic
+            </li>
+            <li>
+              Supported Mother Earth through work with Farmer’s Footprint,
+              SeaTrees, Wildcoast, One Flower Project, and the National Forest
+              Foundation, leaving a lasting environmental impact
+            </li>
+          </ul>
+          <p>
+            For this, we extend our open arms, filled with gratitude to our kind
+            community of over 50,000 kind humans!&nbsp;
+          </p>
+          <p>
+            Though we are closing our doors we are keeping our hearts wide open
+            for love, kindness and that positive part of human culture that
+            really carries us all through life. We hope you do the same.
+          </p>
+          <p>Be inspired and try your best to keep it kind!</p>
+          <p style="margin-left: 50px"><b>- The Kindhumans Team</b></p>
+          <p style="margin-top: 50px">
+            <i
+              >Please note, all existing orders will be fulfilled. Any questions
+              or concerns can be addressed to&nbsp;<a
+                href="mailto:info@kindhumans.com"
+                >info@kindhumans.com</a
+              >.</i
+            >
+          </p>
+          <hr />
+          <h2 style="margin-top: 50px">Our Nonprofit Partners</h2>
+          <p>
+            It is through unity that we plant the seeds of kindness to grow a
+            kinder world. Please continue to engage with our nonprofit partners:
+          </p>
+          <ul class="partners">
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.501cthree.org/"
+                >501CTHREE</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.aclu.org/"
+                >ACLU</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.bwrag.com/"
+                >BIG WAVE RISK ASSESSMENT GROUP</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.broam.org/"
+                >BROAM</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.changingtidesfoundation.org/"
+                >CHANGING TIDES FOUNDATION</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.challengedathletes.org/"
+                >CHALLENGED ATHLETES FOUNDATION</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.citysurfproject.com/"
+                >CITY SURF PROJECT</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://colorofchange.org/"
+                >COLOR OF CHANGE</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://farmersfootprint.us/"
+                >FARMER’S FOOTPRINT</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.grassrootsaidpartnership.org/"
+                >GRASSROOTS AID PARTNERSHIP</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.girltrek.org/"
+                >GIRLTREK</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.grindforlife.org/"
+                >GRIND FOR LIFE</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://highfivesfoundation.org/"
+                >HIGH FIVES FOUNDATION</a
+              >
+            </li>
+            <li>
+              <a class="partner-link" target="_blank" href="https://lnt.org/"
+                >LEAVE NO TRACE</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://liferollson.org/"
+                >LIFE ROLLS ON</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="http://www.medicinesglobal.org/"
+                >MEDICINES GLOBAL</a
+              >
+            </li>
+            <li>
+              <a class="partner-link" target="_blank" href="https://naacp.org/"
+                >NAACP</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.nationalforests.org/"
+                >NATIONAL FOREST FOUNDATION</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.oneflowerproject.org/"
+                >ONE FLOWER PROJECT</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://protectourwinters.org/"
+                >PROTECT OUR WINTERS</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.redfordcenter.org/"
+                >THE REDFORD CENTER</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.robmachadofoundation.org/"
+                >ROB MACHADO FOUNDATION</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://seatrees.org/"
+                >SEATREES</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://www.sbev.org/"
+                >SBEV</a
+              >
+            </li>
+            <li>
+              <a class="partner-link" target="_blank" href="https://stoked.org/"
+                >STOKED</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://wildcoast.org/"
+                >WILDCOAST</a
+              >
+            </li>
+            <li>
+              <a
+                class="partner-link"
+                target="_blank"
+                href="https://youthpower365.org/"
+                >YOUTH POWER 365</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <img
+          src="./images/kindhumans_vertical_logo.svg"
+          alt="Kindhumans Logo"
+          class="footer-logo"
+        />
+        <div class="footer-info">
+          <p>
+            Address:<br />322 Encinitas Blvd., Ste. 185, Encinitas, CA 92024
+          </p>
+          <p>
+            Contact:<br /><a href="mailto:info@kindhumans.com"
+              >info@kindhumans.com</a
+            >
+          </p>
+        </div>
+        <hr />
+        <p class="copy-right">© 2024. Kindhumans. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
